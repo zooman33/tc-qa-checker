@@ -2,7 +2,7 @@
 
 > Track-changes verification for bilingual DOCX translation files
 
-[![CI](https://github.com/rahulchandravanshi/tc-qa-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/rahulchandravanshi/tc-qa-checker/actions/workflows/ci.yml)
+[![CI](https://github.com/zooman33/tc-qa-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/zooman33/tc-qa-checker/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -44,7 +44,7 @@ checks — no model, no network, no per-document tuning.
 
 ```bash
 # install from source
-pip install git+https://github.com/rahulchandravanshi/tc-qa-checker
+pip install git+https://github.com/zooman33/tc-qa-checker
 
 # verify a translated revision
 tc-qa-checker --source source_revised.docx --target target_revised.docx
@@ -62,10 +62,10 @@ tc-qa-checker --source source_revised.docx --target target_revised.docx
 
 ```bash
 # from GitHub
-pip install git+https://github.com/rahulchandravanshi/tc-qa-checker
+pip install git+https://github.com/zooman33/tc-qa-checker
 
 # from a local clone (editable, with dev tooling)
-git clone https://github.com/rahulchandravanshi/tc-qa-checker
+git clone https://github.com/zooman33/tc-qa-checker
 cd tc-qa-checker
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"

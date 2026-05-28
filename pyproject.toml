@@ -38,9 +38,9 @@ dev = [
 tc-qa-checker = "tc_qa_checker.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/rahulchandravanshi/tc-qa-checker"
-Repository = "https://github.com/rahulchandravanshi/tc-qa-checker"
-Issues = "https://github.com/rahulchandravanshi/tc-qa-checker/issues"
+Homepage = "https://github.com/zooman33/tc-qa-checker"
+Repository = "https://github.com/zooman33/tc-qa-checker"
+Issues = "https://github.com/zooman33/tc-qa-checker/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/tc_qa_checker"]

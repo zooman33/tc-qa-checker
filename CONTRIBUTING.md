@@ -5,7 +5,7 @@ Thanks for your interest in improving **tc-qa-checker**.
 ## Local setup
 
 ```bash
-git clone https://github.com/rahulchandravanshi/tc-qa-checker
+git clone https://github.com/zooman33/tc-qa-checker
 cd tc-qa-checker
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
