@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from typer.testing import CliRunner
@@ -11,6 +12,8 @@ from tc_qa_checker.cli import app
 from tests.fixtures import build_docx, ins, paragraph, run
 
 runner = CliRunner()
+
+_ANSI_RE = re.compile(r"\x1b\[[0-9;]*m")
 
 
 def _write_pair(tmp_path: Path) -> tuple[Path, Path]:
@@ -46,4 +49,6 @@ def test_cli_missing_file_errors(tmp_path: Path) -> None:
 def test_cli_help() -> None:
     result = runner.invoke(app, ["--help"])
     assert result.exit_code == 0
-    assert "--source" in result.output
+    # Rich may colorize the help, splitting option names across ANSI codes; strip them first.
+    clean = _ANSI_RE.sub("", result.output)
+    assert "--source" in clean
