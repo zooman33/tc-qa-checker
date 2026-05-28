@@ -26,9 +26,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-llm = ["anthropic>=0.39", "openai>=1.40"]
-embeddings = ["sentence-transformers>=3.0"]
-extractors = ["openpyxl>=3.1", "pypdf>=4.0"]
 dev = [
   "ruff>=0.6",
   "mypy>=1.11",
